@@ -1,32 +1,22 @@
 # .gitignore
 
-# Ignore generated files
-__pycache__/
-*.py[cod]
+# ignore node_modules and yarn.lock
+node_modules/
+yarn.lock
 
-# Ignore IDE and editor files
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.sln.docstates
-
-# Ignore build and deploy files
+# ignore build and dist directories
 build/
-deploy/
 dist/
 
-# Ignore virtual environment
-venv/
+# ignore IDE files
+.idea/
+.vscode/
 
-# Ignore node_modules
-node_modules/
-
-# Ignore other IDE and editor files
-*.iml
-*.tmp
-*.log
+# ignore pyc files
 *.pyc
-*.class
-*.swp
-*.swo
+
+# ignore coverage data
+coverage/
+
+# ignore ruff cache
+.ruffcache/
